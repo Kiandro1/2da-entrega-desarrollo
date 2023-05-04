@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+	font-size: 70.5%;
+}
+img {
+    max-width: 100%;
+}
+
+body{
+	background-color: #000;
+}
+h1 {
+    color: blue;
+	margin-top: 25px;
+}
+div {
+	background-color: #201f1f;
+}
+
+h2 {
+	color: blue;
+	text-align: center;
+	margin: 20px;
+}
+a {
+    color: white;
+}
+#sabermas {
+    color: rgb(165, 165, 243);
+	margin-top: 100px;
+}
+.lv {
+    
+    font-size: 1rem;
+    font-style:normal;
+}
+
+ul {
+    list-style:none;
+    ;
+}
+
+a {
+    text-decoration: none;
+}
+logo {
+    max-width: 16px;
+}
+
+
+*{box-sizing:border-box;}
+
+#ivu {
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+	border: solid 3px rgb(28, 28, 29);
+	margin-left: 10px;
+	margin-right: 10px;
+}
+@media (max-width: 468px) {
+	.navegador li {
+	z-index: 1;
+	}
+#sabermas {
+	background-image: url(../img/tae.jpg);
+	color: white;
+	}
+#ivu {
+	background-image: url(../img/taeunion.jpeg);
+	}
+}
+.galeria-foto {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	gap: 10px;
+	margin-top: 45px;
+
+
+}
+.galeria-foto img{
+	width: 300px;
+	height: 180px;
+	border-radius: 5spx;
+}
+.galeria-foto h3 {
+	animation-duration: 6s;
+	animation-name: aparecer;
+	animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+	0% {
+		color: blue;
+	}
+	25% {
+		color: aquamarine;
+		font-size: 15px;
+	}
+	50% {
+		color: rgb(83, 167, 206);
+		font-size: 20px;
+	};
+	75% {
+		color: aquamarine;
+		font-size: 10px;
+	}
+	100% {
+		color: rgb(235, 27, 27);
+		font-size: 5px;
+	}
+}
+.img-animate {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background:none;
+	margin-top: 150px;
+
+}
+#img-tae {
+	border: solid 3px rgb(62, 62, 180);
+}

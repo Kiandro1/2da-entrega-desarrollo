@@ -1,0 +1,126 @@
+.card-img {	
+	width: 220px;
+	height: 275px;
+	display: block;
+	margin-top: 30px;
+}
+.oferta {
+	position: absolute;
+	top: 0;
+	right: 10%;
+	background-color: black;
+	color: yellow;
+}
+.card {
+	display: flex;
+	flex-direction: row;
+	background-color: #413737;
+	width: 400px;
+	padding: 25px;
+	position: relative;
+	border: solid crimson;
+	color: orange;
+	text-align: left;
+	gap: 10px;
+}
+.text{
+	text-align: center;
+	margin-top: 75px;
+	margin-right: 2px;
+	bottom: 10px;
+	height: 180px;
+	background: none;
+
+	
+}
+.padre-card {
+
+	gap: 10px;
+	margin-top: 20px;
+	justify-content: center;
+	margin-left: 45px;
+	margin-right: 45px;
+
+}
+.button-card{
+	position: absolute;
+	background-color: yellow;
+	bottom: 5px;
+	right: 10px;
+	border-radius: 10px;
+	width: 120px;
+	height: 35px;
+	cursor: pointer;
+	;
+}
+
+.card, h4, p, button {
+	margin-top: 20px;
+}
+
+
+.filtro {
+	display: flex;
+	flex-direction: column;
+}
+.ver-opciones{
+	display: flex;
+	justify-content:center;
+	gap: 20px;
+	color: yellow;	
+}
+.ver-opciones label {
+	cursor: pointer;
+	padding: 5px 10px;
+	border-radius: 3px;
+	border-bottom: solid 2px yellow;
+}
+.ver-opciones label:nth-child(odd) {
+    background-color:grey;
+}
+.ver-opciones label:nth-child(even) {
+	background-color: red;
+}
+
+.filtro input {
+	display: none;
+}
+
+.remeras, .buzos, .zapatillas, .dobok, .protectores {
+	display: none;
+}
+#remeras:checked ~ .padre-card .remeras, 
+#buzos:checked ~ .padre-card .buzos, 
+#dobok:checked ~ .padre-card .dobok,
+#zapatillas:checked ~ .padre-card .zapatillas, 
+#protectores:checked ~ .padre-card .protectores {
+    display: flex;
+	flex-direction: row;
+}
+
+#todos:checked ~ .padre-card .remeras,
+#todos:checked ~ .padre-card .buzos, 
+#todos:checked ~ .padre-card .zapatillas,
+#todos:checked ~ .spadre-card .dobok,
+#todos:checked ~ .padre-card .protectores {
+    display: flex;
+}
+@media (min-width: 768px) {
+	.padre-card {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+	.padre-card {
+	grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media (max-width: 468px) {
+	.ver-opciones {
+	z-index: 1;
+	flex-direction: column;
+	width: 180px;
+	align-items: center;
+	}
+}

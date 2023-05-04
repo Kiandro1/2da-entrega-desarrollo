@@ -1,0 +1,19 @@
+{
+  "name": "2da-entrega.stanley",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kiandro1/2da-entrega-desarrollo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kiandro1/2da-entrega-desarrollo/issues"
+  },
+  "homepage": "https://github.com/Kiandro1/2da-entrega-desarrollo#readme"
+}
