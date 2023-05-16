@@ -20,10 +20,6 @@ h1 {
   margin-top: 25px;
 }
 
-div {
-  background-color: #201f1f;
-}
-
 h2 {
   color: blue;
   text-align: center;
@@ -37,11 +33,12 @@ a {
 #sabermas {
   color: rgb(165, 165, 243);
   margin-top: 100px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-.lv {
-  font-size: 1rem;
-  font-style: normal;
+#sabermas p {
+  text-align: justify;
 }
 
 ul {
@@ -75,7 +72,7 @@ logo {
   }
   #sabermas {
     background-image: url(../img/tae.jpg);
-    color: white;
+    color: rgb(59, 19, 201);
   }
   #ivu {
     background-image: url(../img/taeunion.jpeg);
@@ -87,39 +84,43 @@ logo {
   justify-content: space-around;
   gap: 10px;
   margin-top: 45px;
+  padding: 10px;
+  gap: 10px;
 }
 
 .galeria-foto img {
   width: 300px;
   height: 180px;
-  border-radius: 5spx;
+  border-radius: 3px;
+  border: solid 2px rgb(46, 46, 179);
+  padding: 10px;
 }
 
 .galeria-foto h3 {
-  animation-duration: 6s;
+  animation-duration: 8s;
   animation-name: aparecer;
   animation-iteration-count: infinite;
 }
 
-@keyframes aparecer {
-  0% {
-    color: blue;
+@media (min-width: 768px) {
+  .galeria-foto img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
+}
+@keyframes aparecer {
   25% {
-    color: aquamarine;
-    font-size: 15px;
+    color: blue;
   }
   50% {
     color: rgb(83, 167, 206);
-    font-size: 20px;
+    text-align: center;
   }
   75% {
     color: aquamarine;
-    font-size: 10px;
   }
   100% {
-    color: rgb(235, 27, 27);
-    font-size: 5px;
+    color: blue;
   }
 }
 .img-animate {
@@ -134,6 +135,31 @@ logo {
   border: solid 3px rgb(62, 62, 180);
 }
 
+#nos h3 {
+  font-size: 40px;
+  color: blue;
+  margin-top: 75px;
+  text-align: center;
+}
+
+#nos {
+  animation-duration: 3s;
+  animation-name: nos;
+  animation-iteration-count: infinite;
+}
+
+@keyframes nos {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+    color: aqua;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 header {
   position: sticky;
   top: 0;
@@ -148,6 +174,7 @@ header {
 
 header nav {
   margin-top: 25px;
+  margin-right: 25px;
 }
 
 #arriba {
@@ -192,10 +219,6 @@ footer img {
 footer p {
   text-align: center;
   color: blue;
-}
-
-.row {
-  background: none;
 }
 
 footer {
