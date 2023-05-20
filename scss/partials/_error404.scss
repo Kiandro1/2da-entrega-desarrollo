@@ -1,0 +1,59 @@
+#error404 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    gap: 50px;
+    
+}
+#error404 p {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+#error404 h1 {
+        animation-duration: 4s;
+        animation-name: error;
+        animation-iteration-count: infinite;
+    }    
+@keyframes error {
+    0% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    75% {
+        transform: translate(0,-15px);
+        opacity: .5;
+        color: red;
+    }
+}
+
+#error404 a {
+    animation-duration: 4s;
+    animation-name: e404;
+    animation-iteration-count: infinite;
+}
+
+@keyframes e404 {
+    0% {
+        color: rgb(216, 89, 30);
+        font-size: 15px;
+    }
+    50% {
+        color: orange;
+        font-size: 10px;
+    }
+    75% {
+        opacity: .5;
+        font-size: 10px;
+    }
+    100% {
+        opacity: .75;
+        color: yellow;
+        font-size: 15px;
+    }
+}
