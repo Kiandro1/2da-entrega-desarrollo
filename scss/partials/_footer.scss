@@ -1,6 +1,7 @@
-.container {
+.container-1 footer {
+	grid-area: footer;
 	background: none;
-	margin-left: 0;
+	margin-left: 5px;
 }
 footer img{
 	width: 45px;
@@ -11,11 +12,5 @@ footer img{
 
 footer p{
     text-align: center;
-    color: blue ;
-}
-
-
-footer {
-	margin-top: 10%;
-	margin-bottom: 0;
+    color: blue;
 }

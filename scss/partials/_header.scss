@@ -1,25 +1,12 @@
-header {
+.container-1 .header-1 {
 	position: sticky;
-	top: 0;
+	grid-area: header-1;
 	z-index: 1;
-	background-color: #000;
-	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-}
-header nav {
-	margin-top: 25px;
-	margin-right: 25px;
-}
-#arriba {
-    background-color: rgba(23, 24, 23, 0.993);
-    
-}
-#arriba img{
-	width: 100px;
-	margin-left: 5px;
+	background-color: rgba(23, 21, 21, 0.954);
 }
 .navegador {
     display: flex;
@@ -29,12 +16,29 @@ header nav {
 }
 .navegador li {
 	background-color: blue;
+	z-index: 1;
 	padding: 4px 5px;
 	border-radius: 3px;
 
 }
-@media (min-width: 768px) {
-	header {
-	flex-direction: row;
-	}
+
+#arriba img{
+	width: 100px;
+	margin-left: 5px;
 }
+header nav {
+	margin-top: 25px;
+	margin-right: 25px;
+}
+
+#arriba {
+    background-color: rgba(23, 24, 23, 0.993);
+    
+}
+#arriba img{
+	width: 100px;
+	margin-left: 5px;
+}
+
+
+
